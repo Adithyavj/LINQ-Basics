@@ -19,6 +19,8 @@ namespace Example
             MixedSyntax(integerList);
             Pgrm1.TestingIEnumerable();
             Pgrm1.TestingIQueryable();
+            Pgrm2.New();
+            Pgrm3.New();
             Console.ReadLine();
 
         }
