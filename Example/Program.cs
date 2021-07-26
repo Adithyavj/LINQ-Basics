@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Example.IEnumerableDemo;
 
 namespace Example
 {
@@ -16,12 +17,18 @@ namespace Example
             QuerySyntax(integerList);
             MethodSyntax(integerList);
             MixedSyntax(integerList);
+            Pgrm1.TestingIEnumerable();
+            Pgrm1.TestingIQueryable();
             Console.ReadLine();
+
         }
 
         private static void QuerySyntax(List<int> integerList)
         {
+            IEnumerable<int> a = from inlist in integerList
+                                 select inlist;
             // LINQ Query Syntax
+            // here result is IEnumberable<int>
             var result = from obj in integerList
                          where obj > 5
                          select obj;
