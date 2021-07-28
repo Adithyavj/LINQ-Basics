@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Example.IEnumerableDemo;
+using Example.ListToDatatable;
 
 namespace Example
 {
@@ -21,6 +22,8 @@ namespace Example
             Pgrm1.TestingIQueryable();
             Pgrm2.New();
             Pgrm3.New();
+            Pgrm4.ListToDataTable();
+            Pgrm5.ToGroup();
             Console.ReadLine();
 
         }
